@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Esercizio 3</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var userEmail = prompt("Inserisci la tua email");
+      var emails = ["valentinabianco@gmail.com", "mario-rossi@hotmail.it", "francofranco@hotmail.com"];
+
+      if(emails.includes(userEmail)) {
+        alert("Email autorizzata");
+      } else {
+        alert("Email non autorizzata")
+      }
+
+    </script>
+  </body>
+</html>
