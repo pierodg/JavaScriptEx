@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Esercizio 2</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var userKm = prompt("Quanti km devi percorrere?");
+      var userAge = prompt("Quanti anni hai?");
+
+      var price = userKm / 1 * 0.21;
+
+      if(userAge < 18 ) {
+        var price = price - 20 / 100;
+      } if(userAge >= 65) {
+        var price = price - 40 / 100;
+      } alert(price);
+      
+    </script>
+  </body>
+</html>
