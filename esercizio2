@@ -6,17 +6,48 @@
   </head>
   <body>
     <script type="text/javascript">
+
+      // Inserisci due parole, quale è la piu lunga?
+
+      var word1 = prompt("Inserisci una parola");
+      var word2 = prompt("Inserisci un\'altra parola");
+
+      if (word1.length > word2.length) {
+        alert(word1 + " è piu grande di " + word2);
+      } else {
+        alert(word2 + " è piu grande di " + word1);
+      }
+
+      /* Inserisci con due prompt l’età di due persone (persona1, persona2)
+      e stampa a schermo il numero più grande.*/
+
+      var age1 = prompt("Inserisci età della prima persona");
+      var age2 = prompt("Inserisci età della seconda persona");
+
+      if(age1 > age2) {
+        alert(age1 + ", la prima persona è più grande");
+      } else {
+        alert(age2 + ", la seconda persona è più grande");
+      }
+
+      /* Calcolo prezzo del treno:
+      Il programma dovrà chiedere all’utente il numero di chilometri e
+      l’età e dovrà calcolare il prezzo totale del viaggio.
+      Il prezzo del biglietto è definito in base ai km (0.21 €cent al km) ma c’è
+      uno sconto del 20% per i minorenni e del 40% per gli over 65 */
+
       var userKm = prompt("Quanti km devi percorrere?");
       var userAge = prompt("Quanti anni hai?");
 
       var price = userKm / 1 * 0.21;
 
-      if(userAge < 18 ) {
-        var price = price - 20 / 100;
-      } if(userAge >= 65) {
-        var price = price - 40 / 100;
-      } alert(price);
-      
+      if (userAge < 18 ) {
+        price = price - 20 / 100;
+      } if (userAge >= 65) {
+        price = price - 40 / 100;
+      }
+      alert(price);
+
     </script>
   </body>
 </html>
