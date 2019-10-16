@@ -32,6 +32,13 @@
       for(var j = 1000; j >= 0; --j) {
         console.log(j);
       }
+      
+      
+      // Crea un array contenente 5 nomi e stampali a schermo
+       var names = ["Piero", "Valentina", "Nicola", "Adriana", "Dalila"];
+       for(var k = 0; k < 5; k++) {
+        console.log(names[k]);
+        }
 
         /* Chiedi all’utente la sua email controlla che sia nella lista di chi
         può accedere e stampa un messaggio appropriato */
