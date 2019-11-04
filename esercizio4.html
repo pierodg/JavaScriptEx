@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Esercizio 4</title>
+  </head>
+  <body>
+    <h1>Apri la console!</h1>
+    <script type="text/javascript">
+
+      //for (var i = 0; i < nomi.length; i++){console.log(nomi[i]);}
+      //Traduci in un ciclo while
+
+      var names = ["Piero", "Simone", "Gianmarco"];
+      var i = 0;
+      while(i < 3) {
+        console.log(names[i]);
+        i++;
+      }
+
+      //Gioco carta sasso e forbice tra cpu
+      var game = ["carta", "sasso", "forbice"];
+
+      var indexCpu1 = (Math.floor((Math.random()*game.length)));
+      var indexCpu2 = (Math.floor((Math.random()*game.length)));
+
+      var cpu1 = game[indexCpu1];
+      var cpu2 = game[indexCpu2];
+
+      console.log("Cpu1 ha scelto: " + cpu1);
+      console.log("Cpu2 ha scelto: " + cpu2);
+
+      if(cpu1 == "carta" && cpu2 == "sasso") {
+        console.log("Cpu1 ha vinto");
+      } else if(cpu1 == "sasso" && cpu2 =="forbice") {
+        console.log("Cpu1 ha vinto");
+      } else if(cpu1 == "forbice" && cpu2 == "carta") {
+        console.log("Cpu1 ha vinto");
+      } else if(cpu1 == cpu2) {
+        console.log("Pareggio");
+      } else {
+        console.log("Cpu2 ha vinto");
+      };
+
+    /*  Chiedi all’utente il cognome, inseriscilo in un array con altri cognomi
+     e stampa la lista ordinata alfabeticamente.
+    Scrivi a che posizione della lista il nuovo utente si trova */
+
+    var surname = ["Rossi", "Bianco", "Garlasco", "Palermo", "Scotti"]
+
+    var userSurname = prompt("Inserisci un cognome");
+
+    var add = surname.concat(userSurname);
+    console.log(add.sort());
+    console.log(userSurname +" Si trova alla posizione: " + add.indexOf(userSurname));
+
+    </script>
+  </body>
+</html>
