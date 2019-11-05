@@ -38,15 +38,15 @@
       function game() {
         if(dice1() > dice2()) {
           alert("Dado Uno ha vinto!");
+          return dice1();
         } else if(dice1() == dice2()) {
           alert("Pareggio!");
         } else {
           alert("Dado Due ha vinto!");
+          return dice2();
         }
       }
-
-      alert(game());
-      //Hello
+      console.log(game());      //Hello
     </script>
 
 
