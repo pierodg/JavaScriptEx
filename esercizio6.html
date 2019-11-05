@@ -10,6 +10,12 @@
     <script type="text/javascript">
 
 
+      /*Fizz Buzz test: Scrivi un programma che stampi
+        i numeri da 1 a 100 ma per i multipli di 3 stampi "Fizz" al posto
+        del numero e per i multipli di 5 stampi Buzz. Per i numeri che sono
+        sia multipli di 3 che di 5 stampi FizzBuzz
+      */
+
       for(var count = 1;count <= 100;count++) {
       if(count %3 == 0 && count %5 == 0) {
         console.log("FizzBuzz");
@@ -20,6 +26,27 @@
       } else
         console.log(count);
       }
+
+      function dice1() {
+        return Math.floor(Math.random() * 6) + 1;
+      }
+
+      function dice2() {
+        return Math.floor(Math.random() * 6) + 1;
+      }
+
+      function game() {
+        if(dice1() > dice2()) {
+          alert("Dado Uno ha vinto!");
+        } else if(dice1() == dice2()) {
+          alert("Pareggio!");
+        } else {
+          alert("Dado Due ha vinto!");
+        }
+      }
+
+      alert(game());
+      //Hello
     </script>
 
 
