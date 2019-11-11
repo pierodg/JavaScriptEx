@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Esercizio7 Div pari e dispari</title>
+    <style>
+    #red {
+      color: red;
+    }
+    #green {
+      color: green;
+    }
+    </style>
+  </head>
+  <body>
+
+    <div id="red"></div>
+
+    <div id="green"></div>
+    <script type="text/javascript">
+
+    //stampa numeri pari nel div red e numeri dispari nel div green
+    var numbers = [10,15,23,11,98,7,70,12,83,100];
+    for(i = 0;i < numbers.length; i++) {
+      if(numbers[i] % 2 == 0) {
+        document.getElementById("green").innerHTML +=  numbers[i] + " ";
+
+      } else if(numbers[i] % 2 != 0){
+        document.getElementById("red").innerHTML += numbers[i] + " ";
+
+      }
+    }
+
+    </script>
+
+  </body>
+</html>
